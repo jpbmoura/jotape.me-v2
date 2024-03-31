@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AppRoutes } from "./pages/routes";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import { Github, Linkedin, Moon, Sun } from "lucide-react";

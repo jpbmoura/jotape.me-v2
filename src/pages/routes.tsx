@@ -1,4 +1,4 @@
-import { Routes, Route, redirect, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import Blog from "./blog";
 import About from "./about";

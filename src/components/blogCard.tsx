@@ -13,16 +13,9 @@ interface BlogCardProps {
   content: ReactElement;
   date: string;
   routePath?: string;
-  isDisabled?: boolean;
 }
 
-const BlogCard = ({
-  title,
-  date,
-  content,
-  routePath,
-  isDisabled,
-}: BlogCardProps) => {
+const BlogCard = ({ title, date, content, routePath }: BlogCardProps) => {
   const navigate = useNavigate();
   return (
     <>
