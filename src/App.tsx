@@ -2,11 +2,15 @@ import { NavLink } from "react-router-dom";
 import { AppRoutes } from "./pages/routes";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import { Github, Linkedin, Moon, Sun } from "lucide-react";
-import React from "react";
+import React, { useEffect } from "react";
 import Me from "@/assets/me.svg";
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = React.useState<boolean>(false);
+  const darkThemeMq = window.matchMedia("(prefers-color-scheme: dark)");
+
+  const [isDarkMode, setIsDarkMode] = React.useState<boolean>(
+    darkThemeMq.matches
+  );
 
   return (
     <>
