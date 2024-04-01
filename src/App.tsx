@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import { AppRoutes } from "./pages/routes";
 import { Avatar, AvatarFallback, AvatarImage } from "./components/ui/avatar";
 import { Github, Linkedin, Moon, Sun } from "lucide-react";
-import React, { useEffect } from "react";
+import React from "react";
 import Me from "@/assets/me.svg";
 
 function App() {
