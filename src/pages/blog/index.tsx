@@ -2,7 +2,7 @@ import BlogCard from "@/components/blogCard";
 
 const blogPosts = [
   {
-    title: "Humilde guia sobre Paleta de Cores",
+    title: "Um Humilde Guia Sobre Paleta de Cores",
     content: (
       <div className="flex flex-row justify-evenly w-full h-full rounded-3xl">
         <div className="bg-[#480032] h-full w-2/6"></div>

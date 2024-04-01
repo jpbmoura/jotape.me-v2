@@ -38,11 +38,11 @@ function App() {
             <div className="pb-6 border-b border-zinc-200 dark:border-zinc-700">
               <div className="flex flex-row justify-between">
                 <div className="flex flex-row gap-4 items-center ">
-                  <Avatar className="size-12 bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-400 dark:from-purple-600 dark:via-purple-500 dark:to-purple-400 animate-gradient bg-300%">
+                  <Avatar className="size-12 bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 dark:from-purple-600 dark:via-purple-400 dark:to-purple-200 animate-gradient bg-300%">
                     <AvatarImage src={Me} />
                     <AvatarFallback>CN</AvatarFallback>
                   </Avatar>
-                  <h1 className="bg-300% font-extrabold text-xl bg-gradient-to-r from-cyan-600 via-cyan-500 to-cyan-400 dark:from-purple-600 dark:via-purple-500 dark:to-purple-400 text-transparent bg-clip-text animate-gradient">
+                  <h1 className="bg-300% font-extrabold text-xl bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 dark:from-purple-600 dark:via-purple-400 dark:to-purple-200 text-transparent bg-clip-text animate-gradient">
                     João Pedro
                   </h1>
                 </div>
