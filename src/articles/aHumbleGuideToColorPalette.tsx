@@ -60,7 +60,7 @@ const AHumbleGuideToColorPalette = () => {
         </p>
       </section>
 
-      <section className="space-y-4 text-justify pt-10">
+      <section className="space-y-4 text-justify pt-10 flex flex-col">
         <h2 className="text-2xl font-bold text-cyan-500 dark:text-purple-500 text-left">
           Psicologia das Cores
         </h2>
@@ -73,19 +73,32 @@ const AHumbleGuideToColorPalette = () => {
 
         <p>
           O <span className="text-red-500 font-bold">vermelho</span>, por
-          exemplo, associado à paixão e à energia, pode aumentar a frequência
-          cardíaca e a pressão arterial, enquanto o{" "}
+          exemplo, associado à paixão e à energia, transmitindo muitas vezes
+          perigo e desejo, enquanto o{" "}
           <span className="text-cyan-500 font-bold">azul</span>, ligado à calma
           e à serenidade, transmite paz e tranquilidade.
         </p>
+
+        <ArticleTextCard type="info">
+          Frequentemente na cultura pop a Psicologia das Cores é utilizada para
+          "manipular" o que sentimos. Talvez uma das obras mais famosas que se
+          utiliza disso é a linda, maravilhosa e perfeita série Breaking Bad.
+          Você pode ler mais sobre isso{" "}
+          <a
+            className="underline"
+            href="https://geekpopnews.com.br/breaking-bad-e-a-quimica-das-cores/"
+            target="_blank"
+          >
+            aqui
+          </a>
+          .
+        </ArticleTextCard>
 
         <p>
           Assim, as cores podem ser usadas estrategicamente para criar
           diferentes atmosferas e comunicar mensagens específicas nas nossas
           aplicações.
         </p>
-
-        <p></p>
       </section>
 
       <section className="space-y-4 text-justify pt-10 flex flex-col">
