@@ -4,7 +4,7 @@ import ArticleTextCard from "@/components/articleTextCard";
 
 const AHumbleGuideToColorPalette = () => {
   return (
-    <ArticleWrapper>
+    <ArticleWrapper date="01/04/2024">
       <h1 className="pb-10 font-bold text-4xl">
         Um Humilde Guia Sobre{" "}
         <span className="text-cyan-600 dark:text-purple-600">
@@ -160,8 +160,8 @@ const AHumbleGuideToColorPalette = () => {
         <p>
           As cores que estão opostas no Circulo Cromático são as que chamamos de
           Complementares. Quando colocadas lado a lado, elas criam um forte
-          contraste, o que pode ser usado para destacar elementos importantes do
-          nosso site ou aplicativo.
+          contraste, o que pode ser usado para destacar elementos importantes da
+          nossa aplicação.
         </p>
 
         <div className="flex flex-row justify-around">
@@ -346,6 +346,10 @@ const AHumbleGuideToColorPalette = () => {
           A combinação dessas três propriedades define a aparência de qualquer
           cor.
         </p>
+      </section>
+
+      <section className="font-bold flex justify-center text-5xl pt-6">
+        Em Contrução...
       </section>
     </ArticleWrapper>
   );

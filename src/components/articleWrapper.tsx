@@ -3,9 +3,10 @@ import { useNavigate } from "react-router-dom";
 
 interface ArticleWrapperProps {
   children: React.ReactNode;
+  date: string;
 }
 
-const ArticleWrapper = ({ children }: ArticleWrapperProps) => {
+const ArticleWrapper = ({ children, date }: ArticleWrapperProps) => {
   const navigate = useNavigate();
   return (
     <>
@@ -19,6 +20,9 @@ const ArticleWrapper = ({ children }: ArticleWrapperProps) => {
         </div>
       </div>
       <div>{children}</div>
+      <div className="pt-16 flex justify-end italic text-zinc-500 dark:text-zinc-400 text-sm">
+        João Pedro - {date}
+      </div>
     </>
   );
 };
