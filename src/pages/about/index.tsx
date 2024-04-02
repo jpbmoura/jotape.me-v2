@@ -6,7 +6,7 @@ const About = () => {
       <p>
         Meu nome é João Pedro, e sou um desenvolvedor front-end brasileiro
         {""}
-        <b>
+        <b className="text-cyan-600 dark:text-purple-500">
           {" "}
           apaixonado por criar experiências de usuário que combinam beleza e
           funcionalidade.
@@ -36,17 +36,27 @@ const About = () => {
       <p>
         Em meu tempo livre, exploro minha paixão pela música, fotografia e
         escrita. Acredito que esses hobbies me permitem exercitar minha{" "}
-        <b>criatividade e visão artística</b>, habilidades que também contribuem
-        para o meu trabalho como desenvolvedor.
+        <b className="text-cyan-600 dark:text-purple-500">
+          criatividade e visão artística
+        </b>
+        , habilidades que também contribuem para o meu trabalho como
+        desenvolvedor.
       </p>
 
       <p>
-        <b>
+        <b className="text-cyan-600 dark:text-purple-500">
           Estou sempre em busca de oportunidades para crescer e contribuir com
           projetos inovadores.
         </b>{" "}
         Se você busca um profissional dedicado, apaixonado pelo que faz e que
-        está sempre buscando se aprimorar, entre em contato comigo!
+        está sempre buscando se aprimorar,{" "}
+        <a
+          href="https://www.linkedin.com/in/jpbmoura/"
+          target="_blank"
+          className="underline"
+        >
+          entre em contato comigo!
+        </a>
       </p>
 
       <p>Obrigado pelo seu tempo.</p>

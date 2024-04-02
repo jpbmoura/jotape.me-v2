@@ -31,9 +31,9 @@ function App() {
       <div
         className={`${
           isDarkMode && "dark"
-        } transition-all font-montserrat h-full flex`}
+        } transition-all font-raleway h-full flex`}
       >
-        <div className="h-full bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-200 w-full flex items-center justify-center md:py-40 pt-28 px-4 ">
+        <div className="h-full bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-200 w-full flex items-center justify-center md:pt-40 pt-28 px-4 ">
           <div className="min-h-screen w-full flex flex-col md:max-w-xl max-w-xs justify-center">
             <div className="pb-6 border-b border-zinc-200 dark:border-zinc-700">
               <div className="flex flex-row justify-between">
@@ -65,7 +65,7 @@ function App() {
                   to="/blog"
                   className={({ isActive }) =>
                     isActive
-                      ? "underline text-cyan-600 dark:text-purple-600 font-bold"
+                      ? "underline text-cyan-500 dark:text-purple-500 font-bold"
                       : "hover:underline text-zinc-500 hover:text-zinc-700 transition-colors"
                   }
                 >
@@ -75,7 +75,7 @@ function App() {
                   to="/about"
                   className={({ isActive }) =>
                     isActive
-                      ? "underline text-cyan-600 dark:text-purple-600 font-bold"
+                      ? "underline text-cyan-500 dark:text-purple-500 font-bold"
                       : "hover:underline text-zinc-500 hover:text-zinc-700 transition-colors"
                   }
                 >
@@ -84,7 +84,7 @@ function App() {
               </div>
             </div>
 
-            <div className="pt-6 grow">
+            <div className="pt-6 pb-10 grow">
               <AppRoutes />
             </div>
           </div>

@@ -13,6 +13,7 @@ module.exports = {
       montserrat: ["Montserrat", "sans-serif"],
       nunito: ["Nunito", "sans-serif"],
       manrope: ["Manrope", "sans-serif"],
+      raleway: ["Raleway", "sans-serif"],
     },
     container: {
       center: true,

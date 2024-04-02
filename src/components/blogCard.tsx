@@ -24,7 +24,7 @@ const BlogCard = ({ title, date, content, routePath }: BlogCardProps) => {
         className="group hover:-translate-y-1 hover:shadow-md transition-all hover:cursor-pointer"
       >
         <CardHeader>
-          <CardTitle className="text-xl font-bold group-hover:text-cyan-600 dark:group-hover:text-purple-600 transition-colors">
+          <CardTitle className="text-xl font-bold group-hover:text-cyan-500 dark:group-hover:text-purple-500 transition-colors">
             {title}
           </CardTitle>
         </CardHeader>
