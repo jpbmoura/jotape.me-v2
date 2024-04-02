@@ -73,8 +73,8 @@ const AHumbleGuideToColorPalette = () => {
 
         <p>
           O <span className="text-red-500 font-bold">vermelho</span>, por
-          exemplo, associado à paixão e à energia, transmitindo muitas vezes
-          perigo e desejo, enquanto o{" "}
+          exemplo, associado à paixão e à energia, tem a particularidade de
+          transmitir sensações como perigo e desejo, enquanto o{" "}
           <span className="text-cyan-500 font-bold">azul</span>, ligado à calma
           e à serenidade, transmite paz e tranquilidade.
         </p>
