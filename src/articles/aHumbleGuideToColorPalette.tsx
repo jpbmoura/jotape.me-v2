@@ -82,8 +82,15 @@ const AHumbleGuideToColorPalette = () => {
         <ArticleTextCard type="info">
           Frequentemente na cultura pop a Psicologia das Cores é utilizada para
           "manipular" o que sentimos. Talvez uma das obras mais famosas que se
-          utiliza disso é a linda, maravilhosa e perfeita série Breaking Bad.
-          Você pode ler mais sobre isso{" "}
+          utiliza disso é a linda, maravilhosa e perfeita série{" "}
+          <a
+            className="underline"
+            target="_blank"
+            href="https://www.imdb.com/title/tt0903747/"
+          >
+            Breaking Bad
+          </a>
+          . Você pode ler mais sobre isso{" "}
           <a
             className="underline"
             href="https://geekpopnews.com.br/breaking-bad-e-a-quimica-das-cores/"
