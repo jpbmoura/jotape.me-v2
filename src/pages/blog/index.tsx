@@ -11,7 +11,7 @@ const blogPosts = [
         <div className="bg-[#FFD6C2] h-full w-1/6"></div>
       </div>
     ),
-    date: "01/04/2024",
+    date: "03/04/2024",
   },
 ];
 
