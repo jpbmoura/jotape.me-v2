@@ -1,6 +1,11 @@
 import ArticleWrapper from "@/components/articleWrapper";
 import colorCirle from "@/assets/images/colorCircle.png";
 import ArticleTextCard from "@/components/articleTextCard";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/components/ui/popover";
 
 const AHumbleGuideToColorPalette = () => {
   return (
@@ -80,25 +85,27 @@ const AHumbleGuideToColorPalette = () => {
         </p>
 
         <ArticleTextCard type="info">
-          Frequentemente na cultura pop a Psicologia das Cores é utilizada para
-          "manipular" o que sentimos. Talvez uma das obras mais famosas que se
-          utiliza disso é a linda, maravilhosa e perfeita série{" "}
-          <a
-            className="underline"
-            target="_blank"
-            href="https://www.imdb.com/title/tt0903747/"
-          >
-            Breaking Bad
-          </a>
-          . Você pode ler mais sobre isso{" "}
-          <a
-            className="underline"
-            href="https://geekpopnews.com.br/breaking-bad-e-a-quimica-das-cores/"
-            target="_blank"
-          >
-            aqui
-          </a>
-          .
+          <p>
+            Frequentemente na cultura pop a Psicologia das Cores é utilizada
+            para "manipular" o que sentimos. Talvez uma das obras mais famosas
+            que se utiliza disso é a linda, maravilhosa e perfeita série{" "}
+            <a
+              className="underline"
+              target="_blank"
+              href="https://www.imdb.com/title/tt0903747/"
+            >
+              Breaking Bad
+            </a>
+            . Você pode ler mais sobre isso{" "}
+            <a
+              className="underline"
+              href="https://geekpopnews.com.br/breaking-bad-e-a-quimica-das-cores/"
+              target="_blank"
+            >
+              aqui
+            </a>
+            .
+          </p>
         </ArticleTextCard>
 
         <p>
@@ -155,15 +162,17 @@ const AHumbleGuideToColorPalette = () => {
         </ul>
 
         <ArticleTextCard type="info">
-          Não vou me desdobrar sobre o motivo de serem primárias, secundarias e
-          terciárias. Mas, se interessar, você pode ler mais sobre{" "}
-          <a
-            className="underline"
-            target="_blank"
-            href="https://www.vivadecora.com.br/pro/cores-primarias/"
-          >
-            aqui
-          </a>
+          <p>
+            Não vou me desdobrar sobre o motivo de serem primárias, secundarias
+            e terciárias. Mas, se interessar, você pode ler mais sobre{" "}
+            <a
+              className="underline"
+              target="_blank"
+              href="https://www.vivadecora.com.br/pro/cores-primarias/"
+            >
+              aqui
+            </a>
+          </p>
         </ArticleTextCard>
         <p>
           Então chega aquela pergunta:{" "}
@@ -311,8 +320,10 @@ const AHumbleGuideToColorPalette = () => {
         </div>
 
         <ArticleTextCard type="info">
-          A Matiz é determinada pelo comprimento de onda da luz que incide sobre
-          a retina. Me desculpe por ser nerd. 🤓
+          <p>
+            A Matiz é determinada pelo comprimento de onda da luz que incide
+            sobre a retina. Me desculpe por ser nerd. 🤓
+          </p>
         </ArticleTextCard>
 
         <p>
@@ -368,8 +379,386 @@ const AHumbleGuideToColorPalette = () => {
         </p>
       </section>
 
-      <section className="font-bold flex justify-center text-5xl pt-6">
-        Em Contrução...
+      <section className="space-y-4 text-justify pt-10 flex flex-col">
+        <h2 className="text-2xl font-bold text-cyan-500 dark:text-purple-500">
+          LaLhama Colchões
+        </h2>
+
+        <p>
+          Vamos lá! Com esses conceitos em mente, vamos montar uma paleta de
+          cores para uma marca fictícia de colchões chamada "LaLhama”.
+        </p>
+
+        <p>
+          Costumo começar escolhendo uma única cor para representar a marca e as
+          sensações que quero passar com ela. No caso da LaLhama vou utilizar um{" "}
+          <span className="text-sky-500 font-bold">Azul Mais Clarinho</span>,
+          meigo e amigável. De acordo com a psicologia das cores, ele trás uma
+          sensação de proteção, tranquilidade e limpeza. Perfeito!.
+        </p>
+
+        <p>
+          Com a Cor da Marca definida, eu quero uma cor que dê contraste e
+          possibilite a criação de pontos de foco na aplicação. Utilizando do
+          Circulo Cromático, decidi escolher um{" "}
+          <span className="text-brown-500 font-bold">
+            Laranja Meio Marrom Meio Esquisito
+          </span>
+          , que é uma cor que se encontra em uma posição oposta ao Azul.
+        </p>
+
+        <h3 className="text-lg font-bold text-left">Gerando nossos Tons</h3>
+
+        <p>
+          Nas nossas aplicações, é comum termos alguns de tons das nossas cores
+          para um punhado de cenários. Como, por exemplo, os blocos de texto
+          informativos que utilizei algumas vezes aqui.
+        </p>
+
+        <p>Como que defino esses tons:</p>
+
+        <ol className="list-decimal list-inside space-y-8">
+          <li className="space-y-2 pb-4">
+            <span>
+              Crio nove quadrados, um ao lado do outro, onde nossa cor ocupa o
+              espaço central e numero elas de 100 à 900.
+            </span>
+            <div className="flex flex-row w-full px-4 h-9 justify-between">
+              <div className="bg-zinc-700 w-[10%] flex justify-center items-center">
+                <span className="translate-y-8 text-sm">100</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">200</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">300</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">400</span>
+              </div>
+              <div className="bg-sky-500 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">500</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">600</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">700</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">800</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">900</span>
+              </div>
+            </div>
+          </li>
+
+          <li className="space-y-2 pb-4">
+            <span>
+              Utilizando as propriedades das cores, vamos definir o tom mais
+              claro e o mais escuro. Para o mais claro, nós aumentamos levemente
+              o Brilho e diminuimos bastante a saturação. Para o mais escuro, é
+              o inverso. Diminuimos o drasticamente o Brilho e ajustamos um
+              pouco a Saturação. Lembre-se de não mudar a Matiz. Ela quem define
+              a nossa cor.
+            </span>
+            <div className="flex flex-row w-full px-4 h-9 justify-between">
+              <div className="bg-sky-100 w-[10%] flex justify-center items-center">
+                <span className="translate-y-8 text-sm">100</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">200</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">300</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">400</span>
+              </div>
+              <div className="bg-sky-500 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">500</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">600</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">700</span>
+              </div>
+              <div className="bg-zinc-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">800</span>
+              </div>
+              <div className="bg-sky-900 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">900</span>
+              </div>
+            </div>
+          </li>
+
+          <li className="space-y-2 pb-4">
+            <span>
+              Agora que temos nossas extremidades, vamos encontrar o restante
+              dos tons.
+            </span>
+            <div className="flex flex-row w-full px-4 h-9 justify-between">
+              <div className="bg-sky-100 w-[10%] flex justify-center items-center">
+                <span className="translate-y-8 text-sm">100</span>
+              </div>
+              <div className="bg-sky-200 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">200</span>
+              </div>
+              <div className="bg-sky-300 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">300</span>
+              </div>
+              <div className="bg-sky-400 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">400</span>
+              </div>
+              <div className="bg-sky-500 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">500</span>
+              </div>
+              <div className="bg-sky-600 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">600</span>
+              </div>
+              <div className="bg-sky-700 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">700</span>
+              </div>
+              <div className="bg-sky-800 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">800</span>
+              </div>
+              <div className="bg-sky-900 w-[10%]  flex justify-center items-center">
+                <span className="translate-y-8 text-sm">900</span>
+              </div>
+            </div>
+          </li>
+
+          <li className="space-y-2 pb-4">
+            <span>
+              Repetindo isso com nossa cor Secundária, temos todas as variações
+              que vamos utilizar.
+            </span>
+            <div className="flex flex-col gap-8">
+              <div className="flex flex-row w-full px-4 h-9 justify-between">
+                <div className="bg-sky-100 w-[11.11%] flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">100</span>
+                </div>
+                <div className="bg-sky-200 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">200</span>
+                </div>
+                <div className="bg-sky-300 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">300</span>
+                </div>
+                <div className="bg-sky-400 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">400</span>
+                </div>
+                <div className="bg-sky-500 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">500</span>
+                </div>
+                <div className="bg-sky-600 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">600</span>
+                </div>
+                <div className="bg-sky-700 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">700</span>
+                </div>
+                <div className="bg-sky-800 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">800</span>
+                </div>
+                <div className="bg-sky-900 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">900</span>
+                </div>
+              </div>
+
+              <div className="flex flex-row w-full px-4 h-9 justify-between">
+                <div className="bg-brown-100 w-[11.11%] flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">100</span>
+                </div>
+                <div className="bg-brown-200 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">200</span>
+                </div>
+                <div className="bg-brown-300 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">300</span>
+                </div>
+                <div className="bg-brown-400 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">400</span>
+                </div>
+                <div className="bg-brown-500 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">500</span>
+                </div>
+                <div className="bg-brown-600 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">600</span>
+                </div>
+                <div className="bg-brown-700 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">700</span>
+                </div>
+                <div className="bg-brown-800 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">800</span>
+                </div>
+                <div className="bg-brown-900 w-[11.11%]  flex justify-center items-center">
+                  <span className="translate-y-8 text-sm">900</span>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ol>
+
+        <ArticleTextCard type="info">
+          <p>
+            A grande maiorias das aplicações vai precisar apresentar mensagens
+            de erro ou de sucesso, textos informativos e avisos. Para isso, eu
+            gosto de utilizar algumas Cores Suporte.
+          </p>
+
+          <ul className="space-y-4">
+            <li className="flex flex-col justify-center items-center">
+              <span className="">Verde para Sucesso</span>
+              <div className="flex flex-row w-full px-4 h-9">
+                <div className="bg-green-100 w-[11.1%]"></div>
+                <div className="bg-green-200 w-[11.1%]"></div>
+                <div className="bg-green-300 w-[11.1%]"></div>
+                <div className="bg-green-400 w-[11.1%]"></div>
+                <div className="bg-green-500 w-[11.1%]"></div>
+                <div className="bg-green-600 w-[11.1%]"></div>
+                <div className="bg-green-700 w-[11.1%]"></div>
+                <div className="bg-green-800 w-[11.1%]"></div>
+                <div className="bg-green-900 w-[11.1%]"></div>
+              </div>
+            </li>
+            <li className="flex flex-col justify-center items-center">
+              <span className="">Amarelo para Avisos</span>
+              <div className="flex flex-row w-full px-4 h-9">
+                <div className="bg-yellow-100 w-[11.1%]"></div>
+                <div className="bg-yellow-200 w-[11.1%]"></div>
+                <div className="bg-yellow-300 w-[11.1%]"></div>
+                <div className="bg-yellow-400 w-[11.1%]"></div>
+                <div className="bg-yellow-500 w-[11.1%]"></div>
+                <div className="bg-yellow-600 w-[11.1%]"></div>
+                <div className="bg-yellow-700 w-[11.1%]"></div>
+                <div className="bg-yellow-800 w-[11.1%]"></div>
+                <div className="bg-yellow-900 w-[11.1%]"></div>
+              </div>
+            </li>
+            <li className="flex flex-col justify-center items-center">
+              <span className="">Vermelho para Erros</span>
+              <div className="flex flex-row w-full px-4 h-9">
+                <div className="bg-red-100 w-[11.1%]"></div>
+                <div className="bg-red-200 w-[11.1%]"></div>
+                <div className="bg-red-300 w-[11.1%]"></div>
+                <div className="bg-red-400 w-[11.1%]"></div>
+                <div className="bg-red-500 w-[11.1%]"></div>
+                <div className="bg-red-600 w-[11.1%]"></div>
+                <div className="bg-red-700 w-[11.1%]"></div>
+                <div className="bg-red-800 w-[11.1%]"></div>
+                <div className="bg-red-900 w-[11.1%]"></div>
+              </div>
+            </li>
+            <li className="flex flex-col justify-center items-center">
+              <span className="">Azul para Informações</span>
+              <div className="flex flex-row w-full px-4 h-9">
+                <div className="bg-blue-100 w-[11.1%]"></div>
+                <div className="bg-blue-200 w-[11.1%]"></div>
+                <div className="bg-blue-300 w-[11.1%]"></div>
+                <div className="bg-blue-400 w-[11.1%]"></div>
+                <div className="bg-blue-500 w-[11.1%]"></div>
+                <div className="bg-blue-600 w-[11.1%]"></div>
+                <div className="bg-blue-700 w-[11.1%]"></div>
+                <div className="bg-blue-800 w-[11.1%]"></div>
+                <div className="bg-blue-900 w-[11.1%]"></div>
+              </div>
+            </li>
+          </ul>
+        </ArticleTextCard>
+      </section>
+
+      <section className="space-y-4 text-justify pt-10 flex flex-col">
+        <h2 className="text-2xl font-bold text-cyan-500 dark:text-purple-500">
+          That's All, Folks
+        </h2>
+
+        <p>
+          E assim, conseguimos criar uma{" "}
+          <Popover>
+            <PopoverTrigger>
+              <span className="underline font-bold">paleta de cores</span>
+            </PopoverTrigger>
+            <PopoverContent>
+              <div className="flex flex-col justify-center items-center">
+                <div className="flex flex-row w-full px-4 h-9 justify-between">
+                  <div className="bg-sky-100 w-[11.1%]"></div>
+                  <div className="bg-sky-200 w-[11.1%]"></div>
+                  <div className="bg-sky-300 w-[11.1%]"></div>
+                  <div className="bg-sky-400 w-[11.1%]"></div>
+                  <div className="bg-sky-500 w-[11.1%]"></div>
+                  <div className="bg-sky-600 w-[11.1%]"></div>
+                  <div className="bg-sky-700 w-[11.1%]"></div>
+                  <div className="bg-sky-800 w-[11.1%]"></div>
+                  <div className="bg-sky-900 w-[11.1%]"></div>
+                </div>
+                <div className="flex flex-row w-full px-4 h-9 justify-between">
+                  <div className="bg-brown-100 w-[11.1%]"></div>
+                  <div className="bg-brown-200 w-[11.1%]"></div>
+                  <div className="bg-brown-300 w-[11.1%]"></div>
+                  <div className="bg-brown-400 w-[11.1%]"></div>
+                  <div className="bg-brown-500 w-[11.1%]"></div>
+                  <div className="bg-brown-600 w-[11.1%]"></div>
+                  <div className="bg-brown-700 w-[11.1%]"></div>
+                  <div className="bg-brown-800 w-[11.1%]"></div>
+                  <div className="bg-brown-900 w-[11.1%]"></div>
+                </div>
+                <div className="flex flex-row w-full px-4 h-9 justify-between">
+                  <div className="bg-green-100 w-[11.1%]"></div>
+                  <div className="bg-green-200 w-[11.1%]"></div>
+                  <div className="bg-green-300 w-[11.1%]"></div>
+                  <div className="bg-green-400 w-[11.1%]"></div>
+                  <div className="bg-green-500 w-[11.1%]"></div>
+                  <div className="bg-green-600 w-[11.1%]"></div>
+                  <div className="bg-green-700 w-[11.1%]"></div>
+                  <div className="bg-green-800 w-[11.1%]"></div>
+                  <div className="bg-green-900 w-[11.1%]"></div>
+                </div>
+                <div className="flex flex-row w-full px-4 h-9 justify-between">
+                  <div className="bg-yellow-100 w-[11.1%]"></div>
+                  <div className="bg-yellow-200 w-[11.1%]"></div>
+                  <div className="bg-yellow-300 w-[11.1%]"></div>
+                  <div className="bg-yellow-400 w-[11.1%]"></div>
+                  <div className="bg-yellow-500 w-[11.1%]"></div>
+                  <div className="bg-yellow-600 w-[11.1%]"></div>
+                  <div className="bg-yellow-700 w-[11.1%]"></div>
+                  <div className="bg-yellow-800 w-[11.1%]"></div>
+                  <div className="bg-yellow-900 w-[11.1%]"></div>
+                </div>
+                <div className="flex flex-row w-full px-4 h-9 justify-between">
+                  <div className="bg-red-100 w-[11.1%]"></div>
+                  <div className="bg-red-200 w-[11.1%]"></div>
+                  <div className="bg-red-300 w-[11.1%]"></div>
+                  <div className="bg-red-400 w-[11.1%]"></div>
+                  <div className="bg-red-500 w-[11.1%]"></div>
+                  <div className="bg-red-600 w-[11.1%]"></div>
+                  <div className="bg-red-700 w-[11.1%]"></div>
+                  <div className="bg-red-800 w-[11.1%]"></div>
+                  <div className="bg-red-900 w-[11.1%]"></div>
+                </div>
+                <div className="flex flex-row w-full px-4 h-9 justify-between">
+                  <div className="bg-blue-100 w-[11.1%]"></div>
+                  <div className="bg-blue-200 w-[11.1%]"></div>
+                  <div className="bg-blue-300 w-[11.1%]"></div>
+                  <div className="bg-blue-400 w-[11.1%]"></div>
+                  <div className="bg-blue-500 w-[11.1%]"></div>
+                  <div className="bg-blue-600 w-[11.1%]"></div>
+                  <div className="bg-blue-700 w-[11.1%]"></div>
+                  <div className="bg-blue-800 w-[11.1%]"></div>
+                  <div className="bg-blue-900 w-[11.1%]"></div>
+                </div>
+              </div>
+            </PopoverContent>
+          </Popover>{" "}
+          única e exclusiva. Com o Azul como cor principal e o Laranja como cor
+          complementar, conseguimos criar uma paleta que transmite tranquilidade
+          e segurança. A landing page da LaLhama Colchões pode ser visto{" "}
+          <a className="font-bold underline" href="#">
+            aqui
+          </a>
+          .
+        </p>
+
+        <p>Muito obrigado pela sua preciosa atenção. Até a próxima!</p>
       </section>
     </ArticleWrapper>
   );
