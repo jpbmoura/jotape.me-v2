@@ -28,7 +28,7 @@ const AHumbleGuideToColorPalette = () => {
           <a
             target="_blank"
             className="underline text-cyan-500 dark:text-purple-500"
-            href=""
+            href="https://coolors.co/"
           >
             Coolors
           </a>
@@ -36,7 +36,7 @@ const AHumbleGuideToColorPalette = () => {
           <a
             target="_blank"
             className="underline text-cyan-500 dark:text-purple-500"
-            href=""
+            href="https://color.adobe.com/"
           >
             Adobe Colors
           </a>{" "}
@@ -44,7 +44,7 @@ const AHumbleGuideToColorPalette = () => {
           <a
             target="_blank"
             className="underline text-cyan-500 dark:text-purple-500"
-            href=""
+            href="https://colorhunt.co/"
           >
             Color Hunt
           </a>{" "}
@@ -88,7 +88,7 @@ const AHumbleGuideToColorPalette = () => {
           <p>
             Frequentemente na cultura pop a Psicologia das Cores é utilizada
             para "manipular" o que sentimos. Talvez uma das obras mais famosas
-            que se utiliza disso é a linda, maravilhosa e perfeita série{" "}
+            que se utiliza disso é a incrível série{" "}
             <a
               className="underline"
               target="_blank"
@@ -96,15 +96,15 @@ const AHumbleGuideToColorPalette = () => {
             >
               Breaking Bad
             </a>
-            . Você pode ler mais sobre isso{" "}
+            . Tem um{" "}
             <a
               className="underline"
               href="https://geekpopnews.com.br/breaking-bad-e-a-quimica-das-cores/"
               target="_blank"
             >
-              aqui
-            </a>
-            .
+              artigo muito massa
+            </a>{" "}
+            que explica melhor o uso na série.
           </p>
         </ArticleTextCard>
 
@@ -163,8 +163,8 @@ const AHumbleGuideToColorPalette = () => {
 
         <ArticleTextCard type="info">
           <p>
-            Não vou me desdobrar sobre o motivo de serem primárias, secundarias
-            e terciárias. Mas, se interessar, você pode ler mais sobre{" "}
+            Não vou falar tuudo sobre o motivo de serem primárias, secundárias e
+            terciárias. Mas, se tu curte uma parada mais aprofundada, pode lê{" "}
             <a
               className="underline"
               target="_blank"
@@ -172,8 +172,10 @@ const AHumbleGuideToColorPalette = () => {
             >
               aqui
             </a>
+            .
           </p>
         </ArticleTextCard>
+
         <p>
           Então chega aquela pergunta:{" "}
           <i className="font-bold">
@@ -394,11 +396,11 @@ const AHumbleGuideToColorPalette = () => {
           sensações que quero passar com ela. No caso da LaLhama vou utilizar um{" "}
           <span className="text-sky-500 font-bold">Azul Mais Clarinho</span>,
           meigo e amigável. De acordo com a psicologia das cores, ele trás uma
-          sensação de proteção, tranquilidade e limpeza. Perfeito!.
+          sensação de proteção, tranquilidade e limpeza. Perfeito!
         </p>
 
         <p>
-          Com a Cor da Marca definida, eu quero uma cor que dê contraste e
+          Com a Cor da Marca definida, agora quero uma cor que dê contraste e
           possibilite a criação de pontos de foco na aplicação. Utilizando do
           Circulo Cromático, decidi escolher um{" "}
           <span className="text-brown-500 font-bold">
@@ -420,8 +422,8 @@ const AHumbleGuideToColorPalette = () => {
         <ol className="list-decimal list-inside space-y-8">
           <li className="space-y-2 pb-4">
             <span>
-              Crio nove quadrados, um ao lado do outro, onde nossa cor ocupa o
-              espaço central e numero elas de 100 à 900.
+              Crio nove quadrados, um ao lado do outro, numero elas de 100 à 900
+              e coloco nossa cor escolhida na posição central (500).
             </span>
             <div className="flex flex-row w-full px-4 h-9 justify-between">
               <div className="bg-zinc-700 w-[10%] flex justify-center items-center">
@@ -458,10 +460,26 @@ const AHumbleGuideToColorPalette = () => {
             <span>
               Utilizando as propriedades das cores, vamos definir o tom mais
               claro e o mais escuro. Para o mais claro, nós aumentamos levemente
-              o Brilho e diminuimos bastante a saturação. Para o mais escuro, é
-              o inverso. Diminuimos o drasticamente o Brilho e ajustamos um
-              pouco a Saturação. Lembre-se de não mudar a Matiz. Ela quem define
-              a nossa cor.
+              o{" "}
+              <span className="text-cyan-500 dark:text-purple-500 font-bold">
+                Brilho
+              </span>{" "}
+              e diminuímos bastante a{" "}
+              <span className="text-cyan-500 dark:text-purple-500 font-bold">
+                Saturação
+              </span>
+              . Para o mais escuro, o inverso: diminuímos drasticamente o{" "}
+              <span className="text-cyan-500 dark:text-purple-500 font-bold">
+                Brilho
+              </span>{" "}
+              e ajustamos um pouco a{" "}
+              <span className="text-cyan-500 dark:text-purple-500 font-bold">
+                Saturação
+              </span>
+              .{" "}
+              <span className="font-bold">
+                Lembre-se de não mudar a Matiz. Ela quem define a nossa cor.
+              </span>
             </span>
             <div className="flex flex-row w-full px-4 h-9 justify-between">
               <div className="bg-sky-100 w-[10%] flex justify-center items-center">
@@ -497,7 +515,7 @@ const AHumbleGuideToColorPalette = () => {
           <li className="space-y-2 pb-4">
             <span>
               Agora que temos nossas extremidades, vamos encontrar o restante
-              dos tons.
+              dos tons ajustando a saturação e o brilho conforme a necessidade.
             </span>
             <div className="flex flex-row w-full px-4 h-9 justify-between">
               <div className="bg-sky-100 w-[10%] flex justify-center items-center">
@@ -602,7 +620,7 @@ const AHumbleGuideToColorPalette = () => {
         <ArticleTextCard type="info">
           <p>
             A grande maiorias das aplicações vai precisar apresentar mensagens
-            de erro ou de sucesso, textos informativos e avisos. Para isso, eu
+            de erro ou de sucesso, textos informativos e avisos. Para isso,
             gosto de utilizar algumas Cores Suporte.
           </p>
 
@@ -752,7 +770,7 @@ const AHumbleGuideToColorPalette = () => {
           única e exclusiva. Com o Azul como cor principal e o Laranja como cor
           complementar, conseguimos criar uma paleta que transmite tranquilidade
           e segurança. A landing page da LaLhama Colchões pode ser visto{" "}
-          <a className="font-bold underline" href="#">
+          <a className="text-cyan-500 dark:text-purple-500 underline" href="#">
             aqui
           </a>
           .
