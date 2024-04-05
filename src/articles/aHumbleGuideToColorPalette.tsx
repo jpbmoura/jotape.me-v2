@@ -773,7 +773,7 @@ const AHumbleGuideToColorPalette = () => {
           <a
             target="_blank"
             className="text-cyan-500 dark:text-purple-500 underline"
-            href="https://lalhama-lrwy.vercel.app/"
+            href="https://lalhama.vercel.app/"
           >
             aqui
           </a>
