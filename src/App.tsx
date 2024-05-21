@@ -34,7 +34,7 @@ function App() {
         } transition-all font-raleway h-full flex`}
       >
         <div className="h-full bg-zinc-50 dark:bg-zinc-900 dark:text-zinc-200 w-full flex items-center justify-center md:pt-40 pt-28 px-4 ">
-          <div className="min-h-screen w-full flex flex-col md:max-w-xl max-w-xs justify-center">
+          <div className="min-h-screen w-full flex flex-col md:max-w-xl lg:max-w-2xl xl:max-w-3xl max-w-xs justify-center">
             <div className="pb-6 border-b border-zinc-200 dark:border-zinc-700">
               <div className="flex flex-row justify-between">
                 <div className="flex flex-row gap-4 items-center ">
