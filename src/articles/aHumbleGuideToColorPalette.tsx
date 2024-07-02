@@ -769,7 +769,8 @@ const AHumbleGuideToColorPalette = () => {
           </Popover>{" "}
           única e exclusiva. Com o Azul como cor principal e o Laranja como cor
           complementar, conseguimos criar uma paleta que transmite tranquilidade
-          e segurança. A landing page da LaLhama Colchões pode ser visto{" "}
+          e segurança.
+          {/* A landing page da LaLhama Colchões pode ser visto{" "}
           <a
             target="_blank"
             className="text-cyan-500 dark:text-purple-500 underline"
@@ -777,7 +778,7 @@ const AHumbleGuideToColorPalette = () => {
           >
             aqui
           </a>
-          .
+          . */}
         </p>
 
         <p>Muito obrigado pela sua preciosa atenção. Até a próxima!</p>
